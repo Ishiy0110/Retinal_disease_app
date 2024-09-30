@@ -74,7 +74,7 @@ with tab1:
             st.image(image, caption = "Uploaded Image")
 
             #getting the predictions
-            label = prediction("Ishita_best_model_mobilenetV2.h5", image)
+            label = prediction("best_model_mobilenetV2.h5", image)
 
             #displaying the predicted label
             st.subheader("Your have  **{}**".format(label))
@@ -87,7 +87,7 @@ with tab2:
         st.image(cam_image)
 
         #getting the predictions
-        label = prediction("Ishita_best_model_mobilenetV2.h5", cam_image)
+        label = prediction("best_model_mobilenetV2.h5", cam_image)
 
         #displaying the predicted label
         st.subheader("You have  **{}**".format(label))
